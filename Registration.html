@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>User registration Form</title>
+<Script language="javascript">
+ function showInput()
+ {
+	var n=document.getElementByld("name").value;
+	var e=document.getElementByld("email").value;
+	var p=document.getElementByld("phone").value;
+	var o=document.getElementByld("organization").value;
+	var a=document.getElementByld("attendee-type").value;
+	document.write("<center><backcolor='pink'>font size=15>your input:name "+n+" <br><br>Email: "+e+" <br><br>phone: "+p+" <br><br>Organization: "+o+" <br><br>Attendee-type: "+a+"</font></center>
+ }
+ </Script>
+</head>
+<body id="body" bgcolor="pink">
+<center>
+<h1>User Registration Form</h1>
+<form>
+<label for="name">Name:</label>
+<input type="text" id="name" name="name"requried>
+<br><br>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email"requried>
+<br><br>
+<label for="phone">Phone:</label>
+<input type="tel"id="phone" name="phone"requried>
+<br><br>
+<label for="name">organization:</label>
+<input type="text" id="organization" name="organization"requried>
+<br><br>
+<label for="attendee-type">Attendee-Type:</label>
+<select id ="attendee-type" name="attendee-type">
+<option value="general">General</option>
+<option value="vip">VIP</option>
+<option value="speaker">Speaker</option>
+</select>
+<br><br>
+<input type="submit" onclick="showInput():"value="Register">
+</center>
+</form>
+</body>
+</html>
